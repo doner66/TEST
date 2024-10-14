@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web3 & Base Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Test Your Knowledge of Web3 & Base</h1>
+        <div id="question-container">
+            <p id="question">Loading question...</p>
+            <div class="options">
+                <button class="option" id="option1" onclick="checkAnswer(1)">Option 1</button>
+                <button class="option" id="option2" onclick="checkAnswer(2)">Option 2</button>
+                <button class="option" id="option3" onclick="checkAnswer(3)">Option 3</button>
+            </div>
+            <p id="feedback" class="hidden">Correct/Incorrect</p>
+        </div>
+        <button id="nextButton" class="hidden" onclick="nextQuestion()">Next Question</button>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
